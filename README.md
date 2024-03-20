@@ -16,3 +16,6 @@ We need to ensure that both branches can use the accounting program and have acc
 
 #### Prerequisites: 
 We need anothers pfSense machines for Branch1 and branch2, and We need to configure an additional network interfaces on those pfSense machines. Additionally, the pfSense machine we configured previously will be used as the main headquarters 
+
+### For a secure connection between pfSense machines using IPsec:
+They typically need to share the same pre-shared key (PSK) or utilize a certificate-based authentication method. This key or certificate is used to establish a secure communication channel between the two devices. It ensures that only authorized devices can communicate securely with each other. So, both pfSense machines would indeed need to share the same key or have compatible certificates for IPsec to function correctly between them.

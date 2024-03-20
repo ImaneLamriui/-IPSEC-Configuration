@@ -23,3 +23,10 @@ Additionally, the pfSense machine we configured previously will be used as __the
 They typically need to share the same pre-shared key (PSK) or utilize a certificate-based authentication method. This key or certificate is used to establish a secure communication channel between the two devices. It ensures that only authorized devices can communicate securely with each other. So, both pfSense machines would indeed need to share the same key or have compatible certificates for IPsec to function correctly between them.
 pfSense can generate strong pre-shared keys (PSKs) automatically, which simplifies the configuration process and ensures security. 
 In this case I have used ths method to establish a secure IPsec connection __successfully__
+
+#### pfsence Configuration
+When the initial installation is complete, reboot the machine, immediately halt the process, and proceed to delete the ISO file from the SATA. Additionally, disconnect the ISO from the controller in the VirtualBox configuration. This will prevent the ISO from reinstalling every time the pfSense machine starts.
+
+<img src="prevent the ISO from reinstalling every time the pfSense machine starts.png" align="center" >
+
+

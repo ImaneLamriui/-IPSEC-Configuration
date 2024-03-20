@@ -15,4 +15,4 @@ Public IP Address: unknown
 We need to ensure that both branches can use the accounting program and have access to the NAS.
 
 #### Prerequisites: 
-We need another pfSense machine for Branch 1, and We need to configure an additional network interface on this second pfSense machine. Additionally, the pfSense machine we configured previously will be used as the main headquarters 
+We need anothers pfSense machines for Branch1 and branch2, and We need to configure an additional network interface on this second pfSense machine. Additionally, the pfSense machine we configured previously will be used as the main headquarters 

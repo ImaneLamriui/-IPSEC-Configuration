@@ -12,10 +12,12 @@ LAN IP Addressing: 192.168.3.0/24
 
 Public IP Address: unknown
 
-We need to ensure that both branches can use the accounting program and have access to the NAS.
+We need to configure the network in such a way that both branches can use __the accounting program__ and have access to __the Network Attached Storage (NAS)__ to meet the operational requirements of the company.
 
 #### Prerequisites: 
-We need anothers pfSense machines for Branch1 and branch2, and We need to configure an additional network interfaces on those pfSense machines. Additionally, the pfSense machine we configured previously will be used as the main headquarters 
+We need additional pfSense appliances for each branch. Each branch would typically require its own pfSense firewall to manage its network and establish secure connections back to the main headquarters or other branches. 
+Each pfSense device would then be configured to connect securely to the central location or other branches using VPN technologies like IPsec or OpenVPN. This allows for secure communication between all branches while providing __centralized management__ and security policies from __the main headquarters__,so,  We need to configure an additional network interfaces on those pfSense machines. 
+Additionally, the pfSense machine we configured previously will be used as __the main headquarters__ on __part1__(Mentioned at the top of the document)
 
 #### For a secure connection between pfSense machines using IPsec:
 They typically need to share the same pre-shared key (PSK) or utilize a certificate-based authentication method. This key or certificate is used to establish a secure communication channel between the two devices. It ensures that only authorized devices can communicate securely with each other. So, both pfSense machines would indeed need to share the same key or have compatible certificates for IPsec to function correctly between them.

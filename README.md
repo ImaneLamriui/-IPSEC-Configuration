@@ -15,12 +15,15 @@ __LAN__ IP Addressing: __192.168.3.0/24__
 
 Public IP Address: unknown
 
-###### My sOurce address setted automatically by DHCP (WAN):
- __192.168.1.118__
+###### My source address is dynamically set (WAN): 192.168.1.1/24 (192.168.1.107).
+###### Principal firewall address (LAN): 192.168.3.0 (192.168.3.129).
  
 We need to configure the network in such a way that both branches can use __the accounting program__ and have access to __the Network Attached Storage (NAS)__ to meet the operational requirements of the company.
 <p align="center">
-<img src="WAN-and-LAN-branch1-Network-4-firwall-config.png" align="center"  width="400">
+ 
+<img src="WAN-and-LAN-principal-branch-Network-firewall-config.png" align="center"  width="400">
+ 
+<img src="WAN-and-LAN-branch1-Network-4-firewall-config.png" align="center"  width="400">
 
 
 ##### Prerequisites: 

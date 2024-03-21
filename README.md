@@ -29,15 +29,18 @@ We need to configure the network in such a way that both branches can use __the 
 ##### Prerequisites: 
 We need additional pfSense appliances for each branch. Each branch would typically require its own pfSense firewall to manage its network and establish secure connections back to the main headquarters or other branches. 
 Each pfSense device would then be configured to connect securely to the central location or other branches using VPN technologies like IPsec or OpenVPN. This allows for secure communication between all branches while providing __centralized management__ and security policies from __the main headquarters__,so,  We need to configure an additional network interfaces on those pfSense machines. 
-Additionally, the pfSense machine we configured previously will be used as __the main headquarters__ on __part1__(Mentioned at the top of the document)
+
+Additionally, the pfSense machine I configure previously will be used as __the main headquarters__ on __part1__(Mentioned at the top of the document)
 
 ##### For a secure connection between pfSense machines using IPsec:
-They typically need to share the same pre-shared key (PSK) or utilize a certificate-based authentication method. This key or certificate is used to establish a secure communication channel between the two devices. It ensures that only authorized devices can communicate securely with each other. So, both pfSense machines would indeed need to share the same key or have compatible certificates for IPsec to function correctly between them.
+They typically need to share the same __pre-shared key (PSK)__ or utilize a certificate-based authentication method. 
+
+This key or certificate is used to establish a secure communication channel between the two devices. 
 
 <p align="center">
 <img src="remote-network-and-encryption-algorithms.png" align="center" width="400" height="300">
 
-pfSense can generate strong pre-shared keys (PSKs) automatically, which simplifies the configuration process and ensures security. 
+pfSense can generate strong __pre-shared keys__ (PSKs) automatically, which simplifies the configuration process and ensures security. 
 In this case I have used ths method to establish a secure IPsec connection __successfully__:
 ##### Press the 'Connect' button in the pfSense status section.:
 
@@ -64,7 +67,7 @@ When the initial installation is complete, reboot the machine, immediately halt 
 
 #### _Conclusion_:
 
-#### -In this task, we have proceeded to:
+#### In this task, we have proceeded to:
 ###### -Create network interfaces (configure WAN and LAN).
 ###### -Define security policies.
 ###### -Configure firewall rules.

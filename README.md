@@ -48,10 +48,13 @@ In this case I have used ths method to establish a secure IPsec connection __suc
 
 <p align="center">
 <img src="Established-connection.png" align="center"  width="400">
+ 
+<p align="center"> 
+<img src="Tunnels.png" align="center"  width="400">
 
 ##### Then, we will see one activated tunnel displayed on the dashboard status
 <p align="center">
-<img src="Status-Dashboard-active-tunnels.png.png" width="400">
+<img src="Status-Dashboard-active-tunnels.png" width="400">
 
 ##### pfsence Configuration
 When the initial installation is complete, reboot the machine, immediately halt the process, and proceed to delete the ISO file from the SATA. Additionally, disconnect the ISO from the controller in the VirtualBox configuration. This will prevent the ISO from reinstalling every time the pfSense machine starts.

@@ -76,9 +76,4 @@ When the initial installation is complete, reboot the machine, immediately halt 
 <p align="center">
 <img src="pfsense-group.png" width="400">
 
-On __part 3__ I will configure the other LAN 192.168.3.0, we have it on the same red of the firewall 192.168.3.129, this will generate conflits, we must do some configuration changes to establish this remote LAN : 192.168.3.0
-The main issue here is that both the IP address of __the main firewall__ (192.168.3.129) and __the network address of Branch 2's LAN__ (192.168.3.0/24) share __the same network prefix__ (192.168.3). This can lead to addressing conflicts and network confusion.
-When a device in the 192.168.3.0/24 network needs to communicate with the main firewall (whose IP address is 192.168.3.129), it may encounter conflicts because it won't know whether the IP address belongs to a host in the network or to the firewall itself.
 
-To avoid this problem, __one solution__ would be to change the IP address of the main firewall to an address that is outside the range of addresses used in my network, as mentioned earlier. This ensures that there is no overlap in network prefixes and prevents __ addressing conflicts__.
-Additionally, ensuring that any firewall rules or routing configurations on the main firewall are updated to reflect the new IP address.
